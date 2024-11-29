@@ -1,0 +1,82 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 0 3px #B4B4B4;
+  position: fixed;
+  top: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.6em;
+  color: #1578C3;
+}
+
+header .btn {
+  background-color: #1578C3 !important;
+  padding: 4px 10px;
+  margin: 5px 12px;
+}
+
+header nav {
+  margin: 4px;
+  z-index: 999;
+}
+
+header nav a {
+  color: #5A5A5A;
+  font-size: 1.3em;
+  padding: 4px 10px;
+}
+
+header nav a:hover {
+  color: #000000;
+}
+
+#btn-menu {
+  font-size: 1.8em;
+  color: #1578C3;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width:768px) {
+  header nav {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: #fff;
+    height: 0;
+  }
+  .active {
+  height: 30vh;
+  }
+  header nav a {
+    display: block;
+    margin: 8px 5px;
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px 0;
+  }
+
+  #btn-menu {
+    display: block;
+  }
+}
